@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center">
+
+    <ImageView android:layout_width="110dp"
+               android:layout_height="130dp"
+               android:background="@drawable/no_book_icon"
+               android:contentDescription="@null"/>
+
+    <TextView android:layout_marginTop="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="暂无图书"
+              android:textColor="@color/gray"/>
+
+    <Button android:layout_marginTop="15dp"
+            android:layout_height="36dp"
+            android:layout_width="210dp"
+            android:text="添加更多图书"
+            android:textSize="16dp"
+            android:background="@drawable/btn_default"/>
+
+</LinearLayout>
+

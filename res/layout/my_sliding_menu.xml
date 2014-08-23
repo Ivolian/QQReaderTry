@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/sidebar_bg">
+
+    <!--书架书籍 & 更新书籍-->
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:gravity="center_horizontal"
+                  android:padding="15dp">
+
+        <ImageView android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/qq"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginRight="50dp"
+                          android:gravity="center_horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="30dp"
+                          android:textColor="@android:color/white"
+                          android:text="0"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="书架书籍"
+                          android:textSize="13dp"
+                          android:textColor="@color/gray"
+                          android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center_horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="30dp"
+                          android:textColor="@android:color/white"
+                          android:text="0"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="更新书籍"
+                          android:textSize="13dp"
+                          android:textColor="@color/gray"
+                          android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--按分组找书-->
+    <LinearLayout android:id="@+id/llGroupSearch"
+            android:layout_marginTop="13dp"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:clickable="true"
+                  android:gravity="center_vertical">
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/sidebar_list_search"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="按分组找书"
+                  android:layout_marginLeft="6dp"/>
+
+        <ImageView android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/sidebar_list_arrow_light"
+                   android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="0.2dp"
+          android:layout_width="match_parent"
+          android:background="@color/buttomtab_selected"/>
+
+    <!--批量管理图书-->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:clickable="true"
+                  android:gravity="center_vertical">
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/sidebar_list_setting"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="按分组找书"
+                  android:layout_marginLeft="6dp"/>
+
+        <ImageView android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/sidebar_list_arrow_light"
+                   android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <!--导入云书架图书-->
+    <LinearLayout android:layout_marginTop="13dp"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:clickable="true"
+                  android:gravity="center_vertical">
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/sidebar_list_cloud"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="导入云书架图书"
+                  android:layout_marginLeft="6dp"/>
+
+        <ImageView android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/sidebar_list_arrow_light"
+                   android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="0.2dp"
+          android:layout_width="match_parent"
+          android:background="@color/buttomtab_selected"/>
+
+    <!--导入本地图书-->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:clickable="true"
+                  android:gravity="center_vertical">
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/sidebar_list_local"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="导入本地图书"
+                  android:layout_marginLeft="6dp"/>
+
+        <ImageView android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/sidebar_list_arrow_light"
+                   android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="0.2dp"
+          android:layout_width="match_parent"
+          android:background="@color/buttomtab_selected"/>
+
+    <!--微云网盘-->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:clickable="true"
+                  android:gravity="center_vertical">
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/sidebar_list_disk"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="微云网盘"
+                  android:layout_marginLeft="6dp"/>
+
+        <ImageView android:layout_width="16dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/sidebar_list_arrow_light"
+                   android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <!--连载更新提醒   -->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:background="@drawable/sidebar_list_item_bg"
+                  android:gravity="center_vertical"
+                  android:layout_marginTop="15dp">
+
+        <TextView android:layout_width="0dp" android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:textSize="16dp"
+                  android:text="连载更新提醒"
+                  android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

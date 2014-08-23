@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/llFragmentContainer"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp" android:layout_weight="1"
+                  android:orientation="horizontal"/>
+
+    <TextView android:background="@drawable/main_tab_shadow"
+              android:layout_width="match_parent"
+              android:layout_height="7.0dip"/>
+
+    <TextView android:background="@color/tab_topline" android:layout_height="0.2dp"
+              android:layout_width="match_parent"/>
+
+    <!--底部 Tab-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="56dp"
+                  android:orientation="horizontal">
+
+        <!--书架-->
+        <LinearLayout android:id="@+id/llBookshelf"
+                      android:layout_height="match_parent"
+                      android:layout_width="0dp" android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center">
+
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:src="@drawable/maintab_bookstand_icon"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="书架"
+                      android:textColor="@color/tab_selected"
+                      android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <!--书城-->
+        <LinearLayout android:id="@+id/llBookCity"
+                      android:layout_height="match_parent"
+                      android:layout_width="0dp" android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center">
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:src="@drawable/maintab_city_icon"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="书城"
+                      android:textColor="@color/tab_unselected"
+                      android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <!--分类-->
+        <LinearLayout android:id="@+id/llCategory"
+                      android:layout_height="match_parent"
+                      android:layout_width="0dp" android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center">
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:src="@drawable/maintab_category_icon"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="分类"
+                      android:textColor="@color/tab_unselected"
+                      android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <!--我的-->
+        <LinearLayout android:id="@+id/llMe"
+                      android:layout_height="match_parent"
+                      android:layout_width="0dp" android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center">
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:src="@drawable/maintab_profile_icon"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的"
+                      android:textColor="@color/tab_unselected"
+                      android:textSize="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

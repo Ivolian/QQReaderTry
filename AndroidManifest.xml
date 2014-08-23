@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.QQReader"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="17"/>
+    <application android:label="QQReader"
+                 android:icon="@drawable/icon"
+                 android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        <activity android:name=".Activity.SplashActivity"
+                  android:theme="@style/SplashActivityTheme"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.GroupSearchActivity"/>
+    </application>
+</manifest>
